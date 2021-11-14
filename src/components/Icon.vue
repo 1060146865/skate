@@ -6,6 +6,7 @@
 
 <script lang="ts">
   let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
+  //单元测试的时候会有问题
   try {importAll(require.context('../assets/icons', true, /\.svg$/));} catch (error) {console.log(error);}
   export default {
     props: ['name'],
